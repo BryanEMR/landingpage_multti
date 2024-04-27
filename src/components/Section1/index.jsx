@@ -2,6 +2,7 @@ import React from "react";
 import { Contener, Icon, Image } from "./styles";
 import laptop from "../../assets/Section1/Laptop.png";
 import whatsapp from "../../assets/Section1/Whatsapp.png";
+import Carousel from "../Carousel";
 
 export default function Section1() {
 
@@ -20,7 +21,9 @@ export default function Section1() {
                 </div>
                 <Image src={laptop} alt="Laptop" />
                 <Icon src={whatsapp} alt="Whatsapp" />
+                
             </Contener>
+            <Carousel/>
         </>
 
 

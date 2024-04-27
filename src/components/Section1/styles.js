@@ -2,8 +2,32 @@ import styled from "styled-components";
 import background from "../../assets/Section1/Background.png"
 
 export const Contener = styled.div`
-    width: 100%;
+@media (max-width: 1450px) {
+    height: 121vh;
+
+}
+@media (max-width: 1300px) {
+    height: 107vh;
+
+}
+@media (max-width: 1150px) {
+    height: 97vh;
+
+}
+@media (max-width: 1050px) {
+    height: 87vh;
+
+}
+@media (max-width: 950px) {
+    height: 80vh;
+
+}
+@media (max-width: 850px) {
+    height: 70vh;
+
+}
     height: 130vh;
+    width: 100%;
     background-image: url(${background});
     background-size: 100%; 
     background-repeat: no-repeat;
