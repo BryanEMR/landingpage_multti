@@ -1,5 +1,5 @@
 import React from "react";
-import { Contener, Icon, Image } from "./styles";
+import { Container, Icon, Image } from "./styles";
 import laptop from "../../assets/Section1/Laptop.png";
 import whatsapp from "../../assets/Section1/Whatsapp.png";
 import Carousel from "../Carousel";
@@ -9,7 +9,7 @@ export default function Section1() {
 
     return (
         <>
-            <Contener>
+            <Container>
                 <div class="text">
                     <div class="large">
                         Tecnologia e <br/> segurança pra <br/>você <span class="bold">vender mais.</span>
@@ -22,7 +22,7 @@ export default function Section1() {
                 <Image src={laptop} alt="Laptop" />
                 <Icon src={whatsapp} alt="Whatsapp" />
                 
-            </Contener>
+            </Container>
             <Carousel/>
         </>
 

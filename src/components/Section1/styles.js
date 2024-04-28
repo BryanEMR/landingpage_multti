@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import background from "../../assets/Section1/Background.png"
 
-export const Contener = styled.div`
+export const Container = styled.div`
 @media (max-width: 1450px) {
     height: 121vh;
 
