@@ -13,55 +13,23 @@ export const Container = styled.div`
         margin-top: 5px;
 
     }
-    .coluna-1 {
-        width: calc((100% ) * (1 / 12)); 
-    }
-    
     .coluna-2 {
         width: calc(((100%) * (2 / 12)) - 10px); 
         margin: 0px 5px;
         display: flex;
     }
-    
-    .coluna-3 {
-        width: calc((100% ) * (3 / 12)); 
-    }
-    
     .coluna-4 {
         width: calc(((100%) * (4 / 12)) - 10px); 
         margin: 0px 5px;
     }
-    
-    .coluna-5 {
-        width: calc((100% ) * (5 / 12)); 
-    }
-    
     .coluna-6 {
         width: calc( ( (100%) * (6 / 12) ) - 5px );
         margin: 0 2.5px; 
     }
-    
-    .coluna-7 {
-        width: calc((100% ) * (7 / 12)); 
-    }
-    
     .coluna-8 {
         width: calc((100% ) * (8/ 12)); 
         
     }
-    
-    .coluna-9 {
-        width: calc((100% ) * (9 / 12)); 
-    }
-    
-    .coluna-10 {
-        width: calc((100% ) * (10 / 12));
-    }
-    
-    .coluna-11 {
-        width: calc((100% ) * (11 / 12));
-    }
-    
     .coluna-12 {
         width: calc(100% )
     }
