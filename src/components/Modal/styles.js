@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 100%;
     height: 600px;
     color: #6F6F6F;
-    .linha{
+    .row{
         display: flex;
         flex-flow: row wrap;
     }

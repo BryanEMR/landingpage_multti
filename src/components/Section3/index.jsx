@@ -8,13 +8,13 @@ export default function Section3() {
     return (
         <Container>
             <div className="container">
-                <div className=" linha title center">
+                <div className=" row title center">
                     Depoimentos
                 </div>
-                <div className=" linha text center">
+                <div className=" row text center">
                     O suporte ao cliente é nossa primeira prioridade.
                 </div>
-                <div className="linha ">
+                <div className="row ">
                     <div className="depositions">
                         <div>
                             <img className="imgTestimony" src={testimony1} alt="Testemunho 1" />

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Modal.css';
 import { Container } from './styles'
+import closed from '../../assets/Modal/Closed.png';
 
 const Modal = ({ isOpen, onClose }) => {
   return (
@@ -8,10 +9,13 @@ const Modal = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className="modal-overlay" onClick={onClose}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={onClose}>&times;</span>
+            <span className="close" onClick={onClose}>
+            <img src={closed} alt="Fechar" />
+
+            </span>
             <Container>
               {/* primeira parte da tabela */}
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-4">
                   <p className="title">
                     Tabela de Valores
@@ -25,7 +29,7 @@ const Modal = ({ isOpen, onClose }) => {
                 <div className="coluna-2 gray">AMERICAN EXPRESS</div>
                 <div className="coluna-2 gray">HIPERCAD</div>
               </div>
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-4">
                 </div>
                 <div className="coluna-2">
@@ -45,7 +49,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-6">Caixa</div>
                 </div>
               </div>
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-4">
                 </div>
                 <div className="coluna-2">
@@ -65,7 +69,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-6">Rápido</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-4 white">
                   <p className='padding-10'>
                     Débito
@@ -88,7 +92,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-6 light-blue">-</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-4 white">
                   <p className='padding-10'>
                     Crédito à vista
@@ -111,7 +115,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-6 light-blue">3,790%</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-4 white">
                   <p className='padding-10'>
                     Crédito parcelado (até 6x)
@@ -134,7 +138,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-6 light-blue">3,90%</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-4 white">
                   <p className='padding-10'>
                     Crédito parcelado (até 12x)
@@ -159,7 +163,7 @@ const Modal = ({ isOpen, onClose }) => {
               </div>
               <br />
               {/* Segunda parte da tabela */}
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-6 flex">
                   <div className="coluna-8"></div>
                   <div className="coluna-2"></div>
@@ -168,7 +172,7 @@ const Modal = ({ isOpen, onClose }) => {
                 <div className="coluna-6">
                 </div>
               </div>
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-6 flex">
                   <div className="coluna-8">Tarifas de antecipação</div>
                   <div className="coluna-2 center">Padão</div>
@@ -177,7 +181,7 @@ const Modal = ({ isOpen, onClose }) => {
                 <div className="coluna-6">
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-6 flex">
                   <div className="coluna-8 white">
                     <p className='padding-10'>
@@ -190,7 +194,7 @@ const Modal = ({ isOpen, onClose }) => {
                 <div className="coluna-6">
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-6 flex">
                   <div className="coluna-8 white">
                     <p className='padding-10'>
@@ -210,7 +214,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-2 center"></div>
                 </div>
               </div>
-              <div className="linha">
+              <div className="row">
                 <div className="coluna-6">
                   <div className="coluna-8">
                     <p className="obs">
@@ -230,7 +234,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-2 dark-blue center">R$ 3,49</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-6 flex">
                   <div className="coluna-8">Prazo de antecipação</div>
                   <div className="coluna-2 center"></div>
@@ -246,7 +250,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-2 dark-blue center">1,19%</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-6 flex">
                   <div className="coluna-8 white">
                     <p className='padding-10'>
@@ -266,7 +270,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-2 dark-blue center">R$ 0,90</div>
                 </div>
               </div>
-              <div className="linha margin-top-5">
+              <div className="row margin-top-5">
                 <div className="coluna-6 flex">
                   <div className="coluna-8 white">
                     <p className='padding-10'>

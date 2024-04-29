@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 600px;
     .container{
         padding: 0px 20vh;
-        .linha{
+        .row{
             display: flex;
         }
         .title{
