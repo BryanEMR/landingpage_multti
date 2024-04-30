@@ -54,7 +54,7 @@ export default function Section4() {
                                 <input type="password" placeholder="••••••••"/>
                                 <br/>
                                 <br/>
-                                <button type="button" onClick={openModal}>
+                                <button type="button" style={{ cursor: 'pointer' }} onClick={openModal}>
                                 Cadastrar
                                 </button>
                             </form>
@@ -62,8 +62,6 @@ export default function Section4() {
                     </div>
                 </div>
             </Container>
-            {/* <Icone src={about} alt="Sobre"  onClick={openModal}/> */}
-
             <div>
                 <Notification isOpen={modalOpen} onClose={closeModal} />
             </div>

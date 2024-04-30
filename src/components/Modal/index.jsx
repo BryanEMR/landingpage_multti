@@ -9,9 +9,8 @@ const Modal = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className="modal-overlay" onClick={onClose}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={onClose}>
-            <img src={closed} alt="Fechar" />
-
+            <span className="close" style={{ cursor: 'pointer' }} onClick={onClose}>
+              <img src={closed} alt="Fechar" />
             </span>
             <Container>
               {/* primeira parte da tabela */}
@@ -205,7 +204,7 @@ const Modal = ({ isOpen, onClose }) => {
                   <div className="coluna-2 light-blue center">2,50%</div>
                 </div>
                 <div className="coluna-6 flex">
-                <div className="coluna-2"></div>
+                  <div className="coluna-2"></div>
                   <div className="coluna-8">
                     <p className='padding-10'>
                       Demais tarifas

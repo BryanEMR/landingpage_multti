@@ -70,7 +70,7 @@ export default function Carousel() {
     return (
         <CarouselContainer>
             <div className='container'>
-                {count > 0 ? <Transition src={back} alt="Anterior" onClick={handleBackClick} /> : <div className="space"/>}
+                {count > 0 ? <Transition src={back} alt="Anterior" style={{ cursor: 'pointer' }} onClick={handleBackClick} /> : <div className="space"/>}
                 <div className="slide">
                     <div className='column1'>
                         <div className='center'>
@@ -97,7 +97,7 @@ export default function Carousel() {
                         <img src={dataCarousel[count].image} alt="Imagem do carrossel" />
                     </div>
                 </div>
-                {count < dataCarousel.length - 1 && <Transition src={next} alt="Próximo" onClick={handleNextClick} />}
+                {count < dataCarousel.length - 1 && <Transition src={next} alt="Próximo" style={{ cursor: 'pointer' }} onClick={handleNextClick} />}
             </div>
         </CarouselContainer>
     )

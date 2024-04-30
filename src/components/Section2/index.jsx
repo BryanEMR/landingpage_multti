@@ -88,7 +88,7 @@ export default function Section2() {
                                 </table>
                                 <p>
                                     Todas as simulações usam as taxas iniciais informadas no site.
-                                    <Icone src={about} alt="Sobre"  onClick={openModal}/>
+                                    <Icone src={about} alt="Sobre" style={{ cursor: 'pointer' }}  onClick={openModal}/>
                                 </p>
                             </div>
                         </div>

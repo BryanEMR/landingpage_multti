@@ -10,7 +10,7 @@ const Notification = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className="modal-overlay" onClick={onClose}>
           <div className="notification-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={onClose}>
+            <span className="close" style={{ cursor: 'pointer' }} onClick={onClose}>
               <img src={closed} alt="Fechar" />
             </span>
             <Container>
@@ -21,7 +21,7 @@ const Notification = ({ isOpen, onClose }) => {
                 Finalize seu cadastro na plataforma e acesse seu e-mail para validação.
               </div>
               <div>
-                <button type="button" onClick={onClose}> Acessar plataforma </button>
+                <button type="button" style={{ cursor: 'pointer' }} onClick={onClose}> Acessar plataforma </button>
               </div>
             </Container>
           </div>
