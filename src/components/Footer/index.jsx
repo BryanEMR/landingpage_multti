@@ -5,7 +5,7 @@ import certificados from "../../assets/Footer/Certificados.png";
 import logo from "../../assets/Footer/Logo.png";
 import background from "../../assets/Footer/Background.png"
 
-import Notification from "../Notification";
+import ModalTermsUse from "../ModalTermsUse";
 
 export default function Footer() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -101,7 +101,7 @@ export default function Footer() {
                 </div>
             </Container>
             <div>
-                <Notification isOpen={modalOpen} onClose={closeModal} />
+                <ModalTermsUse isOpen={modalOpen} onClose={closeModal} />
             </div>
         </footer>
     )

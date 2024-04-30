@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../../assets/Footer/Background.png"
 
 export const Container = styled.div`
     width: 100%;

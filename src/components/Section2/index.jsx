@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Icone } from "./styles";
 import about from "../../assets/Section2/About.png"
-import Modal from "../Modal"; 
+import Modal from "../ModalTable"; 
 
 const rows = [
     {

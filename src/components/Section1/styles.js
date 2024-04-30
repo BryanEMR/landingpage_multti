@@ -33,7 +33,7 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     display: flex;
     .text{
-        z-index: 2; 
+        z-index: 1; 
         margin: 15% 0 0 20vh;
         color: #FFFFFF;
         width: 40%;
